@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пример наведения указателя на элемент страницы</title>
+  <meta charset="utf-8">
+</head>
+<body>
+ 
+<img onmouseover="ChangeOver(this)" onmouseout="ChangeOut(this)" name="pic" src="http://storage2.vsemayki.ru/images/0/0/514/514102/previews/sign_front_white_500.jpg" alt="Smiley" width="300" height="300">
+<h2>Наведите на изображение курсор мыши и оно изменится.</h2>
+<h2>А теперь отведите его в сторону и понаблюдайте за изменениями</h2>
+<script>
+function ChangeOver(x) {
+ x.src= 'https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearlarge-link-earrings-68533651_1015073_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp';
+};
+function ChangeOut(x) {   
+ x.src= 'https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearlarge-link-earrings-68533651_1016429_SV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp';
+}
+</script>
+ 
+</body>
+</html>

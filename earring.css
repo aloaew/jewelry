@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+  }
+  html{
+    font-size: 62.5%;
+    scroll-behavior :  smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden; 
+  }
+  
+  section{
+    padding: 2rem 9%;
+  }
+  
+  .heading{
+  text-align: center;
+  font-size: 4rem;
+  color:#333;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgba(255,51,153,.05);
+  }
+  
+  .heading span{
+    color: #e84393;
+  }
+  
+  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color:#fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  
+  .btn:hover{
+    background: #e84393;
+  
+  }
+  
+  header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #ffff;
+    padding: 2rem 9%;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  header .logo{
+  font-size: 3rem;
+  color: #333;
+  font-weight: bolder;  
+  font-family: Helvetica,Arial,sans-serif;
+  color: #333;
+  }
+  
+  header .logo span{
+    color: #e84393;
+  
+  }
+  
+  header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666; 
+  }
+  
+  header .navbar a:hover{
+    color: #e84393;
+  }
+  
+  header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+  
+  }
+  
+  header .icons a:hover{
+    color: #e84393;
+    
+  }
+  
+  header #toggler{
+    display: none;
+  }
+  
+  header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: 5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+  }
+  
+  .container{
+    background-color: #FF8F85;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(transparent,  rgba(255, 128, 149, 0.774)), url(https://asset.swarovski.com/images/c_crop,g_xy_center,w_4247,h_1438,x_2208,y_1282/dpr_auto,f_auto,q_auto,c_lfill,w_1980,h_614/swa-cms/2023_SAVOIR_FAIRE_VISUAL_5650563_gi2/.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+  }
+  
+  .nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+  }
+  
+  .text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 8%; 
+  }
+  .text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url("https://cdn141.picsart.com/285671887005211.png");
+    -webkit-background-clip : text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+  } @keyframes back{
+  100%{
+  background-position: 2000px 0;
+  }
+  }
+  
+  .text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+  }
+  .text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+  }
+  section{
+    padding: 2rem 9%;
+  }
+  .products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+  }
+  
+  .products .box-container .box .discount{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: #e84393;
+    background: rgba(255,51,153,.05);
+    z-index: 1;
+    border-radius: .5rem;
+  }
+  
+  .products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+  }
+  
+  .products .box-container .box .image img{
+    height: 25rem;   
+  }
+  .products .box-container .box:hover .image img{
+    transform: scale(1.1);    
+  }
+  
+  .products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem; left: 0; right: 0;
+    display: flex;
+  }
+  
+  .products .box-container .box:hover .image .icons{
+    bottom: 0;
+  }
+  
+  .products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: #e84393;
+    color: #fff;
+  }
+  
+  .products .box-container .box .image .icons .cart-btn{
+    border-left:.1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 100%;
+  }
+  
+  .products .box-container .box .image .icons a:hover{
+    background: #333;
+  }
+  
+  .products .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .products .box-container .box .content h3{
+   font-size: 2.5rem;
+   color: #333;
+  }
+  
+  .products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: #e84393;
+    font-weight: bolder;
+    padding-top: 1rem;
+  }
+  
+  .products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color:#999;
+    font-weight: lighter;
+    text-decoration: line-through;
+  }
+  
+  .footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,.1); 
+}
+.footer .credit span{
+color: #e84393;
+}
+  
+@media (max-width : 768px){
+  
+  header .fa-bars{
+     display: block; 
+  } 
+  header .navbar{
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      background: #eee;
+      border-top: .1rem solid rgba(0,0,0,.1);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0 );
+  }
+  header .navbar a{
+  margin: 1.5rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: .1rem solid rgba(0,0,0,.1);
+  display: block;
+  }
+  header #toggler:checked ~ .navbar{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+}
+
+@media (max-width : 450px){
+  html{
+      font-size: 50%;
+       
+  }
+ 
+}
